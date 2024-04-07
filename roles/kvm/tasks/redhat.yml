@@ -1,0 +1,29 @@
+---
+  - name: install kvm packages on CentOS 8, CentOS 7,Fedora 33, Amazon Linux 2, e.t.c
+    package:
+      name:
+        - bridge-utils
+        - genisoimage
+        - libguestfs-tools
+        - libnss-libvirt
+        - libosinfo-bin
+        - libvirt-clients
+        - libvirt-daemon-system
+        - libvirt-dev
+        - python-lxml
+        - python3-libvirt
+        - qemu-kvm
+        - qemu-utils
+        - virt-top
+        - virtinst
+      state: latest
+      update_cache: yes
+      cache_valid_time: 5400
+      allow_unauthenticated: yes
+    become: true
+
+  - name: Enable service libvirt, and start if not started
+    service:
+      name: libvirtd
+      enabled: yes
+      state: started

@@ -72,3 +72,356 @@ argument instead. This feature will be removed in version 2.11. Deprecation warn
 2024-04-07 17:19:41,540 p=40188 u=ocpadmin n=ansible | Sunday 07 April 2024  17:19:41 +0000 (0:00:00.063)       0:00:00.102 ********** 
 2024-04-07 17:19:41,541 p=40188 u=ocpadmin n=ansible | =============================================================================== 
 2024-04-07 17:19:41,541 p=40188 u=ocpadmin n=ansible | test : Ansible role verification ------------------------------------------------------------------------------------------------------------------------------------- 0.06s
+2024-04-07 18:03:23,383 p=40874 u=ocpadmin n=ansible | [DEPRECATION WARNING]: DEFAULT_SQUASH_ACTIONS option, Loop squashing is deprecated and this configuration will no longer be used , use a list directly with the module 
+argument instead. This feature will be removed in version 2.11. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2024-04-07 18:03:23,667 p=40874 u=ocpadmin n=ansible | PLAY [nodes] ****************************************************************************************************************************************************************
+2024-04-07 18:03:23,692 p=40874 u=ocpadmin n=ansible | TASK [test : Ansible role verification] *************************************************************************************************************************************
+2024-04-07 18:03:23,692 p=40874 u=ocpadmin n=ansible | Sunday 07 April 2024  18:03:23 +0000 (0:00:00.039)       0:00:00.039 ********** 
+2024-04-07 18:03:23,743 p=40874 u=ocpadmin n=ansible | ok: [192.168.122.63] => {
+    "changed": false,
+    "msg": "This is a message from the target machine to verify ansible role successfully"
+}
+2024-04-07 18:03:23,753 p=40874 u=ocpadmin n=ansible | ok: [192.168.122.88] => {
+    "changed": false,
+    "msg": "This is a message from the target machine to verify ansible role successfully"
+}
+2024-04-07 18:03:23,755 p=40874 u=ocpadmin n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-04-07 18:03:23,755 p=40874 u=ocpadmin n=ansible | 192.168.122.63             : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-04-07 18:03:23,756 p=40874 u=ocpadmin n=ansible | 192.168.122.88             : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-04-07 18:03:23,756 p=40874 u=ocpadmin n=ansible | Sunday 07 April 2024  18:03:23 +0000 (0:00:00.063)       0:00:00.103 ********** 
+2024-04-07 18:03:23,756 p=40874 u=ocpadmin n=ansible | =============================================================================== 
+2024-04-07 18:03:23,756 p=40874 u=ocpadmin n=ansible | test : Ansible role verification ------------------------------------------------------------------------------------------------------------------------------------- 0.06s
+2024-04-07 18:46:29,431 p=41544 u=ocpadmin n=ansible | [DEPRECATION WARNING]: DEFAULT_SQUASH_ACTIONS option, Loop squashing is deprecated and this configuration will no longer be used , use a list directly with the module 
+argument instead. This feature will be removed in version 2.11. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2024-04-07 18:46:29,684 p=41544 u=ocpadmin n=ansible | PLAY [nodes] ****************************************************************************************************************************************************************
+2024-04-07 18:46:29,706 p=41544 u=ocpadmin n=ansible | TASK [kvm : install kvm packages on CentOS 8, CentOS 7,Fedora 33, Amazon Linux 2, e.t.c] ************************************************************************************
+2024-04-07 18:46:29,706 p=41544 u=ocpadmin n=ansible | Sunday 07 April 2024  18:46:29 +0000 (0:00:00.036)       0:00:00.036 ********** 
+2024-04-07 18:46:30,988 p=41544 u=ocpadmin n=ansible | fatal: [192.168.122.88]: FAILED! => {"changed": false, "msg": "Unsupported parameters for (dnf) module: allow_unauthenticated, cache_valid_time Supported parameters include: allow_downgrade, autoremove, bugfix, conf_file, disable_excludes, disable_gpg_check, disable_plugin, disablerepo, download_dir, download_only, enable_plugin, enablerepo, exclude, install_repoquery, install_weak_deps, installroot, list, lock_timeout, name, releasever, security, skip_broken, state, update_cache, update_only, validate_certs"}
+2024-04-07 18:46:31,013 p=41544 u=ocpadmin n=ansible | fatal: [192.168.122.63]: FAILED! => {"changed": false, "msg": "Unsupported parameters for (dnf) module: allow_unauthenticated, cache_valid_time Supported parameters include: allow_downgrade, autoremove, bugfix, conf_file, disable_excludes, disable_gpg_check, disable_plugin, disablerepo, download_dir, download_only, enable_plugin, enablerepo, exclude, install_repoquery, install_weak_deps, installroot, list, lock_timeout, name, releasever, security, skip_broken, state, update_cache, update_only, validate_certs"}
+2024-04-07 18:46:31,015 p=41544 u=ocpadmin n=ansible | 	to retry, use: --limit @/home/ocpadmin/workspace/ansible-rnd/ansible-base/ansible-kvm/_logs/retry/kvmsetup.retry
+
+2024-04-07 18:46:31,016 p=41544 u=ocpadmin n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-04-07 18:46:31,016 p=41544 u=ocpadmin n=ansible | 192.168.122.63             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-04-07 18:46:31,016 p=41544 u=ocpadmin n=ansible | 192.168.122.88             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-04-07 18:46:31,016 p=41544 u=ocpadmin n=ansible | Sunday 07 April 2024  18:46:31 +0000 (0:00:01.309)       0:00:01.346 ********** 
+2024-04-07 18:46:31,017 p=41544 u=ocpadmin n=ansible | =============================================================================== 
+2024-04-07 18:46:31,017 p=41544 u=ocpadmin n=ansible | kvm : install kvm packages on CentOS 8, CentOS 7,Fedora 33, Amazon Linux 2, e.t.c ------------------------------------------------------------------------------------ 1.31s
+2024-04-07 18:52:23,791 p=41739 u=ocpadmin n=ansible | [DEPRECATION WARNING]: DEFAULT_SQUASH_ACTIONS option, Loop squashing is deprecated and this configuration will no longer be used , use a list directly with the module 
+argument instead. This feature will be removed in version 2.11. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2024-04-07 18:52:24,017 p=41739 u=ocpadmin n=ansible | PLAY [nodes] ****************************************************************************************************************************************************************
+2024-04-07 18:52:24,036 p=41739 u=ocpadmin n=ansible | TASK [kvm : install kvm packages on CentOS 8, CentOS 7,Fedora 33, Amazon Linux 2, e.t.c] ************************************************************************************
+2024-04-07 18:52:24,037 p=41739 u=ocpadmin n=ansible | Sunday 07 April 2024  18:52:24 +0000 (0:00:00.032)       0:00:00.032 ********** 
+2024-04-07 18:52:25,142 p=41739 u=ocpadmin n=ansible | fatal: [192.168.122.88]: FAILED! => {"changed": false, "msg": "Unsupported parameters for (dnf) module: allow_unauthenticated, cache_valid_time Supported parameters include: allow_downgrade, autoremove, bugfix, conf_file, disable_excludes, disable_gpg_check, disable_plugin, disablerepo, download_dir, download_only, enable_plugin, enablerepo, exclude, install_repoquery, install_weak_deps, installroot, list, lock_timeout, name, releasever, security, skip_broken, state, update_cache, update_only, validate_certs"}
+2024-04-07 18:52:25,295 p=41739 u=ocpadmin n=ansible | fatal: [192.168.122.63]: FAILED! => {"changed": false, "msg": "Unsupported parameters for (dnf) module: allow_unauthenticated, cache_valid_time Supported parameters include: allow_downgrade, autoremove, bugfix, conf_file, disable_excludes, disable_gpg_check, disable_plugin, disablerepo, download_dir, download_only, enable_plugin, enablerepo, exclude, install_repoquery, install_weak_deps, installroot, list, lock_timeout, name, releasever, security, skip_broken, state, update_cache, update_only, validate_certs"}
+2024-04-07 18:52:25,298 p=41739 u=ocpadmin n=ansible | 	to retry, use: --limit @/home/ocpadmin/workspace/ansible-rnd/ansible-base/ansible-kvm/_logs/retry/kvmsetup.retry
+
+2024-04-07 18:52:25,298 p=41739 u=ocpadmin n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-04-07 18:52:25,298 p=41739 u=ocpadmin n=ansible | 192.168.122.63             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-04-07 18:52:25,298 p=41739 u=ocpadmin n=ansible | 192.168.122.88             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-04-07 18:52:25,298 p=41739 u=ocpadmin n=ansible | Sunday 07 April 2024  18:52:25 +0000 (0:00:01.261)       0:00:01.293 ********** 
+2024-04-07 18:52:25,298 p=41739 u=ocpadmin n=ansible | =============================================================================== 
+2024-04-07 18:52:25,299 p=41739 u=ocpadmin n=ansible | kvm : install kvm packages on CentOS 8, CentOS 7,Fedora 33, Amazon Linux 2, e.t.c ------------------------------------------------------------------------------------ 1.26s
+2024-04-07 18:55:37,464 p=42023 u=ocpadmin n=ansible | [DEPRECATION WARNING]: DEFAULT_SQUASH_ACTIONS option, Loop squashing is deprecated and this configuration will no longer be used , use a list directly with the module 
+argument instead. This feature will be removed in version 2.11. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2024-04-07 18:55:37,753 p=42023 u=ocpadmin n=ansible | PLAY [nodes] ****************************************************************************************************************************************************************
+2024-04-07 18:55:37,775 p=42023 u=ocpadmin n=ansible | TASK [kvm : install kvm packages on CentOS 8, CentOS 7,Fedora 33, Amazon Linux 2, e.t.c] ************************************************************************************
+2024-04-07 18:55:37,776 p=42023 u=ocpadmin n=ansible | Sunday 07 April 2024  18:55:37 +0000 (0:00:00.037)       0:00:00.037 ********** 
+2024-04-07 18:55:39,044 p=42023 u=ocpadmin n=ansible | fatal: [192.168.122.88]: FAILED! => {"changed": false, "msg": "Unsupported parameters for (dnf) module: allow_unauthenticated, cache_valid_time Supported parameters include: allow_downgrade, autoremove, bugfix, conf_file, disable_excludes, disable_gpg_check, disable_plugin, disablerepo, download_dir, download_only, enable_plugin, enablerepo, exclude, install_repoquery, install_weak_deps, installroot, list, lock_timeout, name, releasever, security, skip_broken, state, update_cache, update_only, validate_certs"}
+2024-04-07 18:55:39,086 p=42023 u=ocpadmin n=ansible | fatal: [192.168.122.63]: FAILED! => {"changed": false, "msg": "Unsupported parameters for (dnf) module: allow_unauthenticated, cache_valid_time Supported parameters include: allow_downgrade, autoremove, bugfix, conf_file, disable_excludes, disable_gpg_check, disable_plugin, disablerepo, download_dir, download_only, enable_plugin, enablerepo, exclude, install_repoquery, install_weak_deps, installroot, list, lock_timeout, name, releasever, security, skip_broken, state, update_cache, update_only, validate_certs"}
+2024-04-07 18:55:39,089 p=42023 u=ocpadmin n=ansible | 	to retry, use: --limit @/home/ocpadmin/workspace/ansible-rnd/ansible-base/ansible-kvm/_logs/retry/kvmsetup.retry
+
+2024-04-07 18:55:39,089 p=42023 u=ocpadmin n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-04-07 18:55:39,089 p=42023 u=ocpadmin n=ansible | 192.168.122.63             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-04-07 18:55:39,090 p=42023 u=ocpadmin n=ansible | 192.168.122.88             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-04-07 18:55:39,090 p=42023 u=ocpadmin n=ansible | Sunday 07 April 2024  18:55:39 +0000 (0:00:01.314)       0:00:01.352 ********** 
+2024-04-07 18:55:39,090 p=42023 u=ocpadmin n=ansible | =============================================================================== 
+2024-04-07 18:55:39,090 p=42023 u=ocpadmin n=ansible | kvm : install kvm packages on CentOS 8, CentOS 7,Fedora 33, Amazon Linux 2, e.t.c ------------------------------------------------------------------------------------ 1.31s
+2024-04-07 18:57:12,495 p=42130 u=root n=ansible | [DEPRECATION WARNING]: DEFAULT_SQUASH_ACTIONS option, Loop squashing is deprecated and this configuration will no longer be used , use a list directly with the module 
+argument instead. This feature will be removed in version 2.11. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2024-04-07 18:57:12,724 p=42130 u=root n=ansible | PLAY [nodes] ****************************************************************************************************************************************************************
+2024-04-07 18:57:12,743 p=42130 u=root n=ansible | TASK [kvm : install kvm packages on CentOS 8, CentOS 7,Fedora 33, Amazon Linux 2, e.t.c] ************************************************************************************
+2024-04-07 18:57:12,743 p=42130 u=root n=ansible | Sunday 07 April 2024  18:57:12 +0000 (0:00:00.032)       0:00:00.032 ********** 
+2024-04-07 18:57:13,104 p=42130 u=root n=ansible | fatal: [192.168.122.88]: UNREACHABLE! => {"changed": false, "msg": "Data could not be sent to remote host \"192.168.122.88\". Make sure this host can be reached over ssh: ", "unreachable": true}
+2024-04-07 18:57:13,105 p=42130 u=root n=ansible | fatal: [192.168.122.63]: UNREACHABLE! => {"changed": false, "msg": "Data could not be sent to remote host \"192.168.122.63\". Make sure this host can be reached over ssh: ", "unreachable": true}
+2024-04-07 18:57:13,108 p=42130 u=root n=ansible | 	to retry, use: --limit @/home/ocpadmin/workspace/ansible-rnd/ansible-base/ansible-kvm/_logs/retry/kvmsetup.retry
+
+2024-04-07 18:57:13,108 p=42130 u=root n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-04-07 18:57:13,108 p=42130 u=root n=ansible | 192.168.122.63             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-04-07 18:57:13,109 p=42130 u=root n=ansible | 192.168.122.88             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-04-07 18:57:13,109 p=42130 u=root n=ansible | Sunday 07 April 2024  18:57:13 +0000 (0:00:00.365)       0:00:00.397 ********** 
+2024-04-07 18:57:13,109 p=42130 u=root n=ansible | =============================================================================== 
+2024-04-07 18:57:13,109 p=42130 u=root n=ansible | kvm : install kvm packages on CentOS 8, CentOS 7,Fedora 33, Amazon Linux 2, e.t.c ------------------------------------------------------------------------------------ 0.37s
+2024-04-07 18:58:45,904 p=42170 u=root n=ansible | [DEPRECATION WARNING]: DEFAULT_SQUASH_ACTIONS option, Loop squashing is deprecated and this configuration will no longer be used , use a list directly with the module 
+argument instead. This feature will be removed in version 2.11. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2024-04-07 18:58:46,232 p=42170 u=root n=ansible | PLAY [nodes] ****************************************************************************************************************************************************************
+2024-04-07 18:58:46,259 p=42170 u=root n=ansible | TASK [kvm : install kvm packages on CentOS 8, CentOS 7,Fedora 33, Amazon Linux 2, e.t.c] ************************************************************************************
+2024-04-07 18:58:46,259 p=42170 u=root n=ansible | Sunday 07 April 2024  18:58:46 +0000 (0:00:00.045)       0:00:00.045 ********** 
+2024-04-07 18:58:46,632 p=42170 u=root n=ansible | fatal: [192.168.122.63]: UNREACHABLE! => {"changed": false, "msg": "Data could not be sent to remote host \"192.168.122.63\". Make sure this host can be reached over ssh: ", "unreachable": true}
+2024-04-07 18:58:46,633 p=42170 u=root n=ansible | fatal: [192.168.122.88]: UNREACHABLE! => {"changed": false, "msg": "Data could not be sent to remote host \"192.168.122.88\". Make sure this host can be reached over ssh: ", "unreachable": true}
+2024-04-07 18:58:46,636 p=42170 u=root n=ansible | 	to retry, use: --limit @/home/ocpadmin/workspace/ansible-rnd/ansible-base/ansible-kvm/_logs/retry/kvmsetup.retry
+
+2024-04-07 18:58:46,636 p=42170 u=root n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-04-07 18:58:46,637 p=42170 u=root n=ansible | 192.168.122.63             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-04-07 18:58:46,637 p=42170 u=root n=ansible | 192.168.122.88             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-04-07 18:58:46,637 p=42170 u=root n=ansible | Sunday 07 April 2024  18:58:46 +0000 (0:00:00.377)       0:00:00.423 ********** 
+2024-04-07 18:58:46,637 p=42170 u=root n=ansible | =============================================================================== 
+2024-04-07 18:58:46,638 p=42170 u=root n=ansible | kvm : install kvm packages on CentOS 8, CentOS 7,Fedora 33, Amazon Linux 2, e.t.c ------------------------------------------------------------------------------------ 0.38s
+2024-04-07 19:00:49,572 p=42247 u=ocpadmin n=ansible | [DEPRECATION WARNING]: DEFAULT_SQUASH_ACTIONS option, Loop squashing is deprecated and this configuration will no longer be used , use a list directly with the module 
+argument instead. This feature will be removed in version 2.11. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2024-04-07 19:00:49,847 p=42247 u=ocpadmin n=ansible | PLAY [localhost] ************************************************************************************************************************************************************
+2024-04-07 19:00:49,863 p=42247 u=ocpadmin n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2024-04-07 19:00:49,863 p=42247 u=ocpadmin n=ansible | Sunday 07 April 2024  19:00:49 +0000 (0:00:00.031)       0:00:00.031 ********** 
+2024-04-07 19:00:51,942 p=42247 u=ocpadmin n=ansible | ok: [localhost]
+2024-04-07 19:00:51,966 p=42247 u=ocpadmin n=ansible | TASK [kvm : install kvm packages on CentOS 8, CentOS 7,Fedora 33, Amazon Linux 2, e.t.c] ************************************************************************************
+2024-04-07 19:00:51,967 p=42247 u=ocpadmin n=ansible | Sunday 07 April 2024  19:00:51 +0000 (0:00:02.103)       0:00:02.134 ********** 
+2024-04-07 19:00:52,040 p=42247 u=ocpadmin n=ansible | skipping: [localhost]
+2024-04-07 19:00:52,062 p=42247 u=ocpadmin n=ansible | TASK [kvm : Enable service libvirt, and start if not started] ***************************************************************************************************************
+2024-04-07 19:00:52,062 p=42247 u=ocpadmin n=ansible | Sunday 07 April 2024  19:00:52 +0000 (0:00:00.095)       0:00:02.230 ********** 
+2024-04-07 19:00:52,115 p=42247 u=ocpadmin n=ansible | skipping: [localhost]
+2024-04-07 19:00:52,137 p=42247 u=ocpadmin n=ansible | TASK [kvm : install kvm packages on Debian 10,9,..,Ubuntu 20.04,18.04,e.t.c] ************************************************************************************************
+2024-04-07 19:00:52,137 p=42247 u=ocpadmin n=ansible | Sunday 07 April 2024  19:00:52 +0000 (0:00:00.074)       0:00:02.305 ********** 
+2024-04-07 19:00:52,397 p=42247 u=ocpadmin n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "module_stderr": "sudo: a password is required\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}
+2024-04-07 19:00:52,401 p=42247 u=ocpadmin n=ansible | 	to retry, use: --limit @/home/ocpadmin/workspace/ansible-rnd/ansible-base/ansible-kvm/_logs/retry/kvmsetup.retry
+
+2024-04-07 19:00:52,401 p=42247 u=ocpadmin n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-04-07 19:00:52,401 p=42247 u=ocpadmin n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=2    rescued=0    ignored=0   
+2024-04-07 19:00:52,402 p=42247 u=ocpadmin n=ansible | Sunday 07 April 2024  19:00:52 +0000 (0:00:00.264)       0:00:02.569 ********** 
+2024-04-07 19:00:52,402 p=42247 u=ocpadmin n=ansible | =============================================================================== 
+2024-04-07 19:00:52,402 p=42247 u=ocpadmin n=ansible | Gathering Facts ------------------------------------------------------------------------------------------------------------------------------------------------------ 2.10s
+2024-04-07 19:00:52,402 p=42247 u=ocpadmin n=ansible | kvm : install kvm packages on Debian 10,9,..,Ubuntu 20.04,18.04,e.t.c ------------------------------------------------------------------------------------------------ 0.26s
+2024-04-07 19:00:52,402 p=42247 u=ocpadmin n=ansible | kvm : install kvm packages on CentOS 8, CentOS 7,Fedora 33, Amazon Linux 2, e.t.c ------------------------------------------------------------------------------------ 0.10s
+2024-04-07 19:00:52,403 p=42247 u=ocpadmin n=ansible | kvm : Enable service libvirt, and start if not started --------------------------------------------------------------------------------------------------------------- 0.07s
+2024-04-07 19:04:16,416 p=42548 u=ocpadmin n=ansible | [DEPRECATION WARNING]: DEFAULT_SQUASH_ACTIONS option, Loop squashing is deprecated and this configuration will no longer be used , use a list directly with the module 
+argument instead. This feature will be removed in version 2.11. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2024-04-07 19:04:16,661 p=42548 u=ocpadmin n=ansible | PLAY [localhost] ************************************************************************************************************************************************************
+2024-04-07 19:04:16,696 p=42548 u=ocpadmin n=ansible | TASK [kvm : install kvm packages on CentOS 8, CentOS 7,Fedora 33, Amazon Linux 2, e.t.c] ************************************************************************************
+2024-04-07 19:04:16,696 p=42548 u=ocpadmin n=ansible | Sunday 07 April 2024  19:04:16 +0000 (0:00:00.049)       0:00:00.049 ********** 
+2024-04-07 19:04:16,749 p=42548 u=ocpadmin n=ansible | skipping: [localhost]
+2024-04-07 19:04:16,770 p=42548 u=ocpadmin n=ansible | TASK [kvm : Enable service libvirt, and start if not started] ***************************************************************************************************************
+2024-04-07 19:04:16,771 p=42548 u=ocpadmin n=ansible | Sunday 07 April 2024  19:04:16 +0000 (0:00:00.074)       0:00:00.124 ********** 
+2024-04-07 19:04:16,822 p=42548 u=ocpadmin n=ansible | skipping: [localhost]
+2024-04-07 19:04:16,843 p=42548 u=ocpadmin n=ansible | TASK [kvm : install kvm packages on Debian 10,9,..,Ubuntu 20.04,18.04,e.t.c] ************************************************************************************************
+2024-04-07 19:04:16,843 p=42548 u=ocpadmin n=ansible | Sunday 07 April 2024  19:04:16 +0000 (0:00:00.072)       0:00:00.196 ********** 
+2024-04-07 19:04:17,269 p=42548 u=ocpadmin n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "module_stderr": "sudo: a password is required\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}
+2024-04-07 19:04:17,272 p=42548 u=ocpadmin n=ansible | 	to retry, use: --limit @/home/ocpadmin/workspace/ansible-rnd/ansible-base/ansible-kvm/_logs/retry/kvmsetup.retry
+
+2024-04-07 19:04:17,272 p=42548 u=ocpadmin n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-04-07 19:04:17,273 p=42548 u=ocpadmin n=ansible | localhost                  : ok=0    changed=0    unreachable=0    failed=1    skipped=2    rescued=0    ignored=0   
+2024-04-07 19:04:17,273 p=42548 u=ocpadmin n=ansible | Sunday 07 April 2024  19:04:17 +0000 (0:00:00.429)       0:00:00.626 ********** 
+2024-04-07 19:04:17,273 p=42548 u=ocpadmin n=ansible | =============================================================================== 
+2024-04-07 19:04:17,273 p=42548 u=ocpadmin n=ansible | kvm : install kvm packages on Debian 10,9,..,Ubuntu 20.04,18.04,e.t.c ------------------------------------------------------------------------------------------------ 0.43s
+2024-04-07 19:04:17,273 p=42548 u=ocpadmin n=ansible | kvm : install kvm packages on CentOS 8, CentOS 7,Fedora 33, Amazon Linux 2, e.t.c ------------------------------------------------------------------------------------ 0.07s
+2024-04-07 19:04:17,274 p=42548 u=ocpadmin n=ansible | kvm : Enable service libvirt, and start if not started --------------------------------------------------------------------------------------------------------------- 0.07s
+2024-04-07 19:05:58,050 p=42606 u=ocpadmin n=ansible | [DEPRECATION WARNING]: DEFAULT_SQUASH_ACTIONS option, Loop squashing is deprecated and this configuration will no longer be used , use a list directly with the module 
+argument instead. This feature will be removed in version 2.11. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2024-04-07 19:05:58,288 p=42606 u=ocpadmin n=ansible | PLAY [localhost] ************************************************************************************************************************************************************
+2024-04-07 19:05:58,318 p=42606 u=ocpadmin n=ansible | TASK [kvm : install kvm packages on CentOS 8, CentOS 7,Fedora 33, Amazon Linux 2, e.t.c] ************************************************************************************
+2024-04-07 19:05:58,319 p=42606 u=ocpadmin n=ansible | Sunday 07 April 2024  19:05:58 +0000 (0:00:00.043)       0:00:00.043 ********** 
+2024-04-07 19:05:58,372 p=42606 u=ocpadmin n=ansible | skipping: [localhost]
+2024-04-07 19:05:58,394 p=42606 u=ocpadmin n=ansible | TASK [kvm : Enable service libvirt, and start if not started] ***************************************************************************************************************
+2024-04-07 19:05:58,395 p=42606 u=ocpadmin n=ansible | Sunday 07 April 2024  19:05:58 +0000 (0:00:00.076)       0:00:00.119 ********** 
+2024-04-07 19:05:58,446 p=42606 u=ocpadmin n=ansible | skipping: [localhost]
+2024-04-07 19:05:58,465 p=42606 u=ocpadmin n=ansible | TASK [kvm : install kvm packages on Debian 10,9,..,Ubuntu 20.04,18.04,e.t.c] ************************************************************************************************
+2024-04-07 19:05:58,465 p=42606 u=ocpadmin n=ansible | Sunday 07 April 2024  19:05:58 +0000 (0:00:00.070)       0:00:00.190 ********** 
+2024-04-07 19:05:59,010 p=42606 u=ocpadmin n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "module_stderr": "sudo: a password is required\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}
+2024-04-07 19:05:59,013 p=42606 u=ocpadmin n=ansible | 	to retry, use: --limit @/home/ocpadmin/workspace/ansible-rnd/ansible-base/ansible-kvm/_logs/retry/kvmsetup.retry
+
+2024-04-07 19:05:59,013 p=42606 u=ocpadmin n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-04-07 19:05:59,013 p=42606 u=ocpadmin n=ansible | localhost                  : ok=0    changed=0    unreachable=0    failed=1    skipped=2    rescued=0    ignored=0   
+2024-04-07 19:05:59,014 p=42606 u=ocpadmin n=ansible | Sunday 07 April 2024  19:05:59 +0000 (0:00:00.548)       0:00:00.738 ********** 
+2024-04-07 19:05:59,014 p=42606 u=ocpadmin n=ansible | =============================================================================== 
+2024-04-07 19:05:59,014 p=42606 u=ocpadmin n=ansible | kvm : install kvm packages on Debian 10,9,..,Ubuntu 20.04,18.04,e.t.c ------------------------------------------------------------------------------------------------ 0.55s
+2024-04-07 19:05:59,014 p=42606 u=ocpadmin n=ansible | kvm : install kvm packages on CentOS 8, CentOS 7,Fedora 33, Amazon Linux 2, e.t.c ------------------------------------------------------------------------------------ 0.08s
+2024-04-07 19:05:59,015 p=42606 u=ocpadmin n=ansible | kvm : Enable service libvirt, and start if not started --------------------------------------------------------------------------------------------------------------- 0.07s
+2024-04-07 19:08:18,906 p=42634 u=ocpadmin n=ansible | [DEPRECATION WARNING]: DEFAULT_SQUASH_ACTIONS option, Loop squashing is deprecated and this configuration will no longer be used , use a list directly with the module 
+argument instead. This feature will be removed in version 2.11. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2024-04-07 19:08:19,154 p=42634 u=ocpadmin n=ansible | PLAY [kvm] ******************************************************************************************************************************************************************
+2024-04-07 19:08:19,170 p=42634 u=ocpadmin n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2024-04-07 19:08:19,170 p=42634 u=ocpadmin n=ansible | Sunday 07 April 2024  19:08:19 +0000 (0:00:00.030)       0:00:00.030 ********** 
+2024-04-07 19:08:21,131 p=42634 u=ocpadmin n=ansible | ok: [192.168.0.212]
+2024-04-07 19:08:21,155 p=42634 u=ocpadmin n=ansible | TASK [kvm : install kvm packages on CentOS 8, CentOS 7,Fedora 33, Amazon Linux 2, e.t.c] ************************************************************************************
+2024-04-07 19:08:21,155 p=42634 u=ocpadmin n=ansible | Sunday 07 April 2024  19:08:21 +0000 (0:00:01.985)       0:00:02.015 ********** 
+2024-04-07 19:08:21,208 p=42634 u=ocpadmin n=ansible | skipping: [192.168.0.212]
+2024-04-07 19:08:21,230 p=42634 u=ocpadmin n=ansible | TASK [kvm : Enable service libvirt, and start if not started] ***************************************************************************************************************
+2024-04-07 19:08:21,230 p=42634 u=ocpadmin n=ansible | Sunday 07 April 2024  19:08:21 +0000 (0:00:00.074)       0:00:02.090 ********** 
+2024-04-07 19:08:21,279 p=42634 u=ocpadmin n=ansible | skipping: [192.168.0.212]
+2024-04-07 19:08:21,303 p=42634 u=ocpadmin n=ansible | TASK [kvm : install kvm packages on Debian 10,9,..,Ubuntu 20.04,18.04,e.t.c] ************************************************************************************************
+2024-04-07 19:08:21,303 p=42634 u=ocpadmin n=ansible | Sunday 07 April 2024  19:08:21 +0000 (0:00:00.072)       0:00:02.163 ********** 
+2024-04-07 19:08:21,576 p=42634 u=ocpadmin n=ansible | fatal: [192.168.0.212]: FAILED! => {"changed": false, "module_stderr": "sudo: a password is required\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}
+2024-04-07 19:08:21,579 p=42634 u=ocpadmin n=ansible | 	to retry, use: --limit @/home/ocpadmin/workspace/ansible-rnd/ansible-base/ansible-kvm/_logs/retry/kvmsetup.retry
+
+2024-04-07 19:08:21,579 p=42634 u=ocpadmin n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-04-07 19:08:21,579 p=42634 u=ocpadmin n=ansible | 192.168.0.212              : ok=1    changed=0    unreachable=0    failed=1    skipped=2    rescued=0    ignored=0   
+2024-04-07 19:08:21,580 p=42634 u=ocpadmin n=ansible | Sunday 07 April 2024  19:08:21 +0000 (0:00:00.276)       0:00:02.440 ********** 
+2024-04-07 19:08:21,580 p=42634 u=ocpadmin n=ansible | =============================================================================== 
+2024-04-07 19:08:21,580 p=42634 u=ocpadmin n=ansible | Gathering Facts ------------------------------------------------------------------------------------------------------------------------------------------------------ 1.99s
+2024-04-07 19:08:21,580 p=42634 u=ocpadmin n=ansible | kvm : install kvm packages on Debian 10,9,..,Ubuntu 20.04,18.04,e.t.c ------------------------------------------------------------------------------------------------ 0.28s
+2024-04-07 19:08:21,580 p=42634 u=ocpadmin n=ansible | kvm : install kvm packages on CentOS 8, CentOS 7,Fedora 33, Amazon Linux 2, e.t.c ------------------------------------------------------------------------------------ 0.07s
+2024-04-07 19:08:21,581 p=42634 u=ocpadmin n=ansible | kvm : Enable service libvirt, and start if not started --------------------------------------------------------------------------------------------------------------- 0.07s
+2024-04-07 19:08:59,416 p=42866 u=ocpadmin n=ansible | [DEPRECATION WARNING]: DEFAULT_SQUASH_ACTIONS option, Loop squashing is deprecated and this configuration will no longer be used , use a list directly with the module 
+argument instead. This feature will be removed in version 2.11. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2024-04-07 19:08:59,666 p=42866 u=ocpadmin n=ansible | PLAY [kvm] ******************************************************************************************************************************************************************
+2024-04-07 19:08:59,702 p=42866 u=ocpadmin n=ansible | TASK [kvm : install kvm packages on CentOS 8, CentOS 7,Fedora 33, Amazon Linux 2, e.t.c] ************************************************************************************
+2024-04-07 19:08:59,702 p=42866 u=ocpadmin n=ansible | Sunday 07 April 2024  19:08:59 +0000 (0:00:00.050)       0:00:00.050 ********** 
+2024-04-07 19:08:59,754 p=42866 u=ocpadmin n=ansible | skipping: [192.168.0.212]
+2024-04-07 19:08:59,773 p=42866 u=ocpadmin n=ansible | TASK [kvm : Enable service libvirt, and start if not started] ***************************************************************************************************************
+2024-04-07 19:08:59,774 p=42866 u=ocpadmin n=ansible | Sunday 07 April 2024  19:08:59 +0000 (0:00:00.071)       0:00:00.122 ********** 
+2024-04-07 19:08:59,823 p=42866 u=ocpadmin n=ansible | skipping: [192.168.0.212]
+2024-04-07 19:08:59,843 p=42866 u=ocpadmin n=ansible | TASK [kvm : install kvm packages on Debian 10,9,..,Ubuntu 20.04,18.04,e.t.c] ************************************************************************************************
+2024-04-07 19:08:59,844 p=42866 u=ocpadmin n=ansible | Sunday 07 April 2024  19:08:59 +0000 (0:00:00.069)       0:00:00.192 ********** 
+2024-04-07 19:09:00,260 p=42866 u=ocpadmin n=ansible | fatal: [192.168.0.212]: FAILED! => {"changed": false, "module_stderr": "sudo: a password is required\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}
+2024-04-07 19:09:00,263 p=42866 u=ocpadmin n=ansible | 	to retry, use: --limit @/home/ocpadmin/workspace/ansible-rnd/ansible-base/ansible-kvm/_logs/retry/kvmsetup.retry
+
+2024-04-07 19:09:00,263 p=42866 u=ocpadmin n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-04-07 19:09:00,263 p=42866 u=ocpadmin n=ansible | 192.168.0.212              : ok=0    changed=0    unreachable=0    failed=1    skipped=2    rescued=0    ignored=0   
+2024-04-07 19:09:00,264 p=42866 u=ocpadmin n=ansible | Sunday 07 April 2024  19:09:00 +0000 (0:00:00.420)       0:00:00.612 ********** 
+2024-04-07 19:09:00,264 p=42866 u=ocpadmin n=ansible | =============================================================================== 
+2024-04-07 19:09:00,264 p=42866 u=ocpadmin n=ansible | kvm : install kvm packages on Debian 10,9,..,Ubuntu 20.04,18.04,e.t.c ------------------------------------------------------------------------------------------------ 0.42s
+2024-04-07 19:09:00,264 p=42866 u=ocpadmin n=ansible | kvm : install kvm packages on CentOS 8, CentOS 7,Fedora 33, Amazon Linux 2, e.t.c ------------------------------------------------------------------------------------ 0.07s
+2024-04-07 19:09:00,264 p=42866 u=ocpadmin n=ansible | kvm : Enable service libvirt, and start if not started --------------------------------------------------------------------------------------------------------------- 0.07s
+2024-04-07 19:11:52,413 p=42960 u=ocpadmin n=ansible | [DEPRECATION WARNING]: DEFAULT_SQUASH_ACTIONS option, Loop squashing is deprecated and this configuration will no longer be used , use a list directly with the module 
+argument instead. This feature will be removed in version 2.11. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2024-04-07 19:11:52,652 p=42960 u=ocpadmin n=ansible | PLAY [localhost demo] *******************************************************************************************************************************************************
+2024-04-07 19:11:52,689 p=42960 u=ocpadmin n=ansible | TASK [print hostname] *******************************************************************************************************************************************************
+2024-04-07 19:11:52,689 p=42960 u=ocpadmin n=ansible | Sunday 07 April 2024  19:11:52 +0000 (0:00:00.051)       0:00:00.051 ********** 
+2024-04-07 19:11:52,740 p=42960 u=ocpadmin n=ansible | ok: [192.168.0.212] => {
+    "changed": false,
+    "msg": "my hostname are as 192.168.0.212 and vizztu with fqdn vizztu.cloud"
+}
+2024-04-07 19:11:52,742 p=42960 u=ocpadmin n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-04-07 19:11:52,742 p=42960 u=ocpadmin n=ansible | 192.168.0.212              : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-04-07 19:11:52,743 p=42960 u=ocpadmin n=ansible | Sunday 07 April 2024  19:11:52 +0000 (0:00:00.053)       0:00:00.105 ********** 
+2024-04-07 19:11:52,743 p=42960 u=ocpadmin n=ansible | =============================================================================== 
+2024-04-07 19:11:52,743 p=42960 u=ocpadmin n=ansible | print hostname ------------------------------------------------------------------------------------------------------------------------------------------------------- 0.05s
+2024-04-07 19:12:41,990 p=42986 u=ocpadmin n=ansible | [DEPRECATION WARNING]: DEFAULT_SQUASH_ACTIONS option, Loop squashing is deprecated and this configuration will no longer be used , use a list directly with the module 
+argument instead. This feature will be removed in version 2.11. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2024-04-07 19:12:42,209 p=42986 u=ocpadmin n=ansible | [WARNING]: Found variable using reserved name: become
+
+2024-04-07 19:12:42,209 p=42986 u=ocpadmin n=ansible | PLAY [localhost demo] *******************************************************************************************************************************************************
+2024-04-07 19:12:42,241 p=42986 u=ocpadmin n=ansible | TASK [print hostname] *******************************************************************************************************************************************************
+2024-04-07 19:12:42,241 p=42986 u=ocpadmin n=ansible | Sunday 07 April 2024  19:12:42 +0000 (0:00:00.044)       0:00:00.044 ********** 
+2024-04-07 19:12:42,291 p=42986 u=ocpadmin n=ansible | ok: [192.168.0.212] => {
+    "changed": false,
+    "msg": "my hostname are as 192.168.0.212 and vizztu with fqdn vizztu.cloud"
+}
+2024-04-07 19:12:42,294 p=42986 u=ocpadmin n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-04-07 19:12:42,294 p=42986 u=ocpadmin n=ansible | 192.168.0.212              : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-04-07 19:12:42,294 p=42986 u=ocpadmin n=ansible | Sunday 07 April 2024  19:12:42 +0000 (0:00:00.052)       0:00:00.097 ********** 
+2024-04-07 19:12:42,295 p=42986 u=ocpadmin n=ansible | =============================================================================== 
+2024-04-07 19:12:42,295 p=42986 u=ocpadmin n=ansible | print hostname ------------------------------------------------------------------------------------------------------------------------------------------------------- 0.05s
+2024-04-07 19:13:00,486 p=42995 u=ocpadmin n=ansible | [DEPRECATION WARNING]: DEFAULT_SQUASH_ACTIONS option, Loop squashing is deprecated and this configuration will no longer be used , use a list directly with the module 
+argument instead. This feature will be removed in version 2.11. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2024-04-07 19:13:00,757 p=42995 u=ocpadmin n=ansible | PLAY [localhost demo] *******************************************************************************************************************************************************
+2024-04-07 19:13:00,795 p=42995 u=ocpadmin n=ansible | TASK [print hostname] *******************************************************************************************************************************************************
+2024-04-07 19:13:00,795 p=42995 u=ocpadmin n=ansible | Sunday 07 April 2024  19:13:00 +0000 (0:00:00.052)       0:00:00.052 ********** 
+2024-04-07 19:13:00,848 p=42995 u=ocpadmin n=ansible | ok: [192.168.0.212] => {
+    "changed": false,
+    "msg": "my hostname are as 192.168.0.212 and vizztu with fqdn vizztu.cloud"
+}
+2024-04-07 19:13:00,851 p=42995 u=ocpadmin n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-04-07 19:13:00,852 p=42995 u=ocpadmin n=ansible | 192.168.0.212              : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-04-07 19:13:00,852 p=42995 u=ocpadmin n=ansible | Sunday 07 April 2024  19:13:00 +0000 (0:00:00.056)       0:00:00.109 ********** 
+2024-04-07 19:13:00,852 p=42995 u=ocpadmin n=ansible | =============================================================================== 
+2024-04-07 19:13:00,852 p=42995 u=ocpadmin n=ansible | print hostname ------------------------------------------------------------------------------------------------------------------------------------------------------- 0.06s
+2024-04-07 19:14:23,579 p=43022 u=ocpadmin n=ansible | [DEPRECATION WARNING]: DEFAULT_SQUASH_ACTIONS option, Loop squashing is deprecated and this configuration will no longer be used , use a list directly with the module 
+argument instead. This feature will be removed in version 2.11. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2024-04-07 19:14:23,846 p=43022 u=ocpadmin n=ansible | PLAY [localhost demo] *******************************************************************************************************************************************************
+2024-04-07 19:14:23,882 p=43022 u=ocpadmin n=ansible | TASK [print hostname] *******************************************************************************************************************************************************
+2024-04-07 19:14:23,882 p=43022 u=ocpadmin n=ansible | Sunday 07 April 2024  19:14:23 +0000 (0:00:00.050)       0:00:00.050 ********** 
+2024-04-07 19:14:23,935 p=43022 u=ocpadmin n=ansible | ok: [192.168.0.212] => {
+    "changed": false,
+    "msg": "my hostname are as 192.168.0.212 and vizztu with fqdn vizztu.cloud"
+}
+2024-04-07 19:14:23,957 p=43022 u=ocpadmin n=ansible | TASK [install kvm packages on Debian 10,9,..,Ubuntu 20.04,18.04,e.t.c] ******************************************************************************************************
+2024-04-07 19:14:23,957 p=43022 u=ocpadmin n=ansible | Sunday 07 April 2024  19:14:23 +0000 (0:00:00.074)       0:00:00.124 ********** 
+2024-04-07 19:14:24,537 p=43022 u=ocpadmin n=ansible | fatal: [192.168.0.212]: FAILED! => {"changed": false, "module_stderr": "sudo: a password is required\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}
+2024-04-07 19:14:24,540 p=43022 u=ocpadmin n=ansible | 	to retry, use: --limit @/home/ocpadmin/workspace/ansible-rnd/ansible-base/ansible-kvm/_logs/retry/local.retry
+
+2024-04-07 19:14:24,540 p=43022 u=ocpadmin n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-04-07 19:14:24,540 p=43022 u=ocpadmin n=ansible | 192.168.0.212              : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-04-07 19:14:24,541 p=43022 u=ocpadmin n=ansible | Sunday 07 April 2024  19:14:24 +0000 (0:00:00.583)       0:00:00.708 ********** 
+2024-04-07 19:14:24,541 p=43022 u=ocpadmin n=ansible | =============================================================================== 
+2024-04-07 19:14:24,541 p=43022 u=ocpadmin n=ansible | install kvm packages on Debian 10,9,..,Ubuntu 20.04,18.04,e.t.c ------------------------------------------------------------------------------------------------------ 0.58s
+2024-04-07 19:14:24,541 p=43022 u=ocpadmin n=ansible | print hostname ------------------------------------------------------------------------------------------------------------------------------------------------------- 0.07s
+2024-04-07 19:15:39,487 p=43078 u=ocpadmin n=ansible | [DEPRECATION WARNING]: DEFAULT_SQUASH_ACTIONS option, Loop squashing is deprecated and this configuration will no longer be used , use a list directly with the module 
+argument instead. This feature will be removed in version 2.11. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2024-04-07 19:15:43,345 p=43078 u=ocpadmin n=ansible | PLAY [localhost demo] *******************************************************************************************************************************************************
+2024-04-07 19:15:43,418 p=43078 u=ocpadmin n=ansible | TASK [print hostname] *******************************************************************************************************************************************************
+2024-04-07 19:15:43,419 p=43078 u=ocpadmin n=ansible | Sunday 07 April 2024  19:15:43 +0000 (0:00:00.103)       0:00:00.103 ********** 
+2024-04-07 19:15:43,477 p=43078 u=ocpadmin n=ansible | ok: [192.168.0.212] => {
+    "changed": false,
+    "msg": "my hostname are as 192.168.0.212 and vizztu with fqdn vizztu.cloud"
+}
+2024-04-07 19:15:43,499 p=43078 u=ocpadmin n=ansible | TASK [install kvm packages on Debian 10,9,..,Ubuntu 20.04,18.04,e.t.c] ******************************************************************************************************
+2024-04-07 19:15:43,499 p=43078 u=ocpadmin n=ansible | Sunday 07 April 2024  19:15:43 +0000 (0:00:00.080)       0:00:00.183 ********** 
+2024-04-07 19:15:43,781 p=43078 u=ocpadmin n=ansible | fatal: [192.168.0.212]: FAILED! => {"changed": false, "module_stderr": "sudo: a password is required\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}
+2024-04-07 19:15:43,783 p=43078 u=ocpadmin n=ansible | 	to retry, use: --limit @/home/ocpadmin/workspace/ansible-rnd/ansible-base/ansible-kvm/_logs/retry/local.retry
+
+2024-04-07 19:15:43,784 p=43078 u=ocpadmin n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-04-07 19:15:43,784 p=43078 u=ocpadmin n=ansible | 192.168.0.212              : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-04-07 19:15:43,784 p=43078 u=ocpadmin n=ansible | Sunday 07 April 2024  19:15:43 +0000 (0:00:00.285)       0:00:00.468 ********** 
+2024-04-07 19:15:43,784 p=43078 u=ocpadmin n=ansible | =============================================================================== 
+2024-04-07 19:15:43,784 p=43078 u=ocpadmin n=ansible | install kvm packages on Debian 10,9,..,Ubuntu 20.04,18.04,e.t.c ------------------------------------------------------------------------------------------------------ 0.29s
+2024-04-07 19:15:43,785 p=43078 u=ocpadmin n=ansible | print hostname ------------------------------------------------------------------------------------------------------------------------------------------------------- 0.08s
+2024-04-07 19:16:17,347 p=43104 u=ocpadmin n=ansible | [DEPRECATION WARNING]: DEFAULT_SQUASH_ACTIONS option, Loop squashing is deprecated and this configuration will no longer be used , use a list directly with the module 
+argument instead. This feature will be removed in version 2.11. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2024-04-07 19:16:17,577 p=43104 u=ocpadmin n=ansible | PLAY [localhost demo] *******************************************************************************************************************************************************
+2024-04-07 19:16:17,612 p=43104 u=ocpadmin n=ansible | TASK [print hostname] *******************************************************************************************************************************************************
+2024-04-07 19:16:17,613 p=43104 u=ocpadmin n=ansible | Sunday 07 April 2024  19:16:17 +0000 (0:00:00.049)       0:00:00.049 ********** 
+2024-04-07 19:16:17,663 p=43104 u=ocpadmin n=ansible | ok: [192.168.0.212] => {
+    "changed": false,
+    "msg": "my hostname are as 192.168.0.212 and vizztu with fqdn vizztu.cloud"
+}
+2024-04-07 19:16:17,684 p=43104 u=ocpadmin n=ansible | TASK [install kvm packages on Debian 10,9,..,Ubuntu 20.04,18.04,e.t.c] ******************************************************************************************************
+2024-04-07 19:16:17,684 p=43104 u=ocpadmin n=ansible | Sunday 07 April 2024  19:16:17 +0000 (0:00:00.071)       0:00:00.120 ********** 
+2024-04-07 19:16:24,360 p=43104 u=ocpadmin n=ansible | ok: [192.168.0.212]
+2024-04-07 19:16:24,365 p=43104 u=ocpadmin n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-04-07 19:16:24,366 p=43104 u=ocpadmin n=ansible | 192.168.0.212              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-04-07 19:16:24,366 p=43104 u=ocpadmin n=ansible | Sunday 07 April 2024  19:16:24 +0000 (0:00:06.682)       0:00:06.802 ********** 
+2024-04-07 19:16:24,366 p=43104 u=ocpadmin n=ansible | =============================================================================== 
+2024-04-07 19:16:24,366 p=43104 u=ocpadmin n=ansible | install kvm packages on Debian 10,9,..,Ubuntu 20.04,18.04,e.t.c ------------------------------------------------------------------------------------------------------ 6.68s
+2024-04-07 19:16:24,367 p=43104 u=ocpadmin n=ansible | print hostname ------------------------------------------------------------------------------------------------------------------------------------------------------- 0.07s
+2024-04-07 19:16:42,355 p=43607 u=ocpadmin n=ansible | [DEPRECATION WARNING]: DEFAULT_SQUASH_ACTIONS option, Loop squashing is deprecated and this configuration will no longer be used , use a list directly with the module 
+argument instead. This feature will be removed in version 2.11. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2024-04-07 19:16:42,584 p=43607 u=ocpadmin n=ansible | PLAY [localhost demo] *******************************************************************************************************************************************************
+2024-04-07 19:16:42,618 p=43607 u=ocpadmin n=ansible | TASK [print hostname] *******************************************************************************************************************************************************
+2024-04-07 19:16:42,618 p=43607 u=ocpadmin n=ansible | Sunday 07 April 2024  19:16:42 +0000 (0:00:00.048)       0:00:00.048 ********** 
+2024-04-07 19:16:42,670 p=43607 u=ocpadmin n=ansible | ok: [192.168.0.212] => {
+    "changed": false,
+    "msg": "my hostname are as 192.168.0.212 and vizztu with fqdn vizztu.cloud"
+}
+2024-04-07 19:16:42,691 p=43607 u=ocpadmin n=ansible | TASK [install kvm packages on Debian 10,9,..,Ubuntu 20.04,18.04,e.t.c] ******************************************************************************************************
+2024-04-07 19:16:42,691 p=43607 u=ocpadmin n=ansible | Sunday 07 April 2024  19:16:42 +0000 (0:00:00.073)       0:00:00.121 ********** 
+2024-04-07 19:16:44,081 p=43607 u=ocpadmin n=ansible | ok: [192.168.0.212]
+2024-04-07 19:16:44,084 p=43607 u=ocpadmin n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-04-07 19:16:44,084 p=43607 u=ocpadmin n=ansible | 192.168.0.212              : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-04-07 19:16:44,084 p=43607 u=ocpadmin n=ansible | Sunday 07 April 2024  19:16:44 +0000 (0:00:01.392)       0:00:01.514 ********** 
+2024-04-07 19:16:44,085 p=43607 u=ocpadmin n=ansible | =============================================================================== 
+2024-04-07 19:16:44,085 p=43607 u=ocpadmin n=ansible | install kvm packages on Debian 10,9,..,Ubuntu 20.04,18.04,e.t.c ------------------------------------------------------------------------------------------------------ 1.39s
+2024-04-07 19:16:44,085 p=43607 u=ocpadmin n=ansible | print hostname ------------------------------------------------------------------------------------------------------------------------------------------------------- 0.07s
+2024-04-07 19:17:17,830 p=43642 u=ocpadmin n=ansible | [DEPRECATION WARNING]: DEFAULT_SQUASH_ACTIONS option, Loop squashing is deprecated and this configuration will no longer be used , use a list directly with the module 
+argument instead. This feature will be removed in version 2.11. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2024-04-07 19:17:18,053 p=43642 u=ocpadmin n=ansible | PLAY [localhost demo] *******************************************************************************************************************************************************
+2024-04-07 19:17:18,073 p=43642 u=ocpadmin n=ansible | TASK [print hostname] *******************************************************************************************************************************************************
+2024-04-07 19:17:18,074 p=43642 u=ocpadmin n=ansible | Sunday 07 April 2024  19:17:18 +0000 (0:00:00.034)       0:00:00.034 ********** 
+2024-04-07 19:17:18,123 p=43642 u=ocpadmin n=ansible | ok: [192.168.122.63] => {
+    "changed": false,
+    "msg": "my hostname are as 192.168.122.63 and ansible-target-1 with fqdn ansible-target-1.vizztu.cloud"
+}
+2024-04-07 19:17:18,133 p=43642 u=ocpadmin n=ansible | ok: [192.168.122.88] => {
+    "changed": false,
+    "msg": "my hostname are as 192.168.122.88 and ansible-target-2 with fqdn ansible-target-2.vizztu.cloud"
+}
+2024-04-07 19:17:18,143 p=43642 u=ocpadmin n=ansible | TASK [install kvm packages on Debian 10,9,..,Ubuntu 20.04,18.04,e.t.c] ******************************************************************************************************
+2024-04-07 19:17:18,143 p=43642 u=ocpadmin n=ansible | Sunday 07 April 2024  19:17:18 +0000 (0:00:00.069)       0:00:00.104 ********** 
+2024-04-07 19:17:19,326 p=43642 u=ocpadmin n=ansible | fatal: [192.168.122.63]: FAILED! => {"changed": false, "msg": "Unsupported parameters for (dnf) module: allow_unauthenticated, cache_valid_time Supported parameters include: allow_downgrade, autoremove, bugfix, conf_file, disable_excludes, disable_gpg_check, disable_plugin, disablerepo, download_dir, download_only, enable_plugin, enablerepo, exclude, install_repoquery, install_weak_deps, installroot, list, lock_timeout, name, releasever, security, skip_broken, state, update_cache, update_only, validate_certs"}
+2024-04-07 19:17:19,327 p=43642 u=ocpadmin n=ansible | fatal: [192.168.122.88]: FAILED! => {"changed": false, "msg": "Unsupported parameters for (dnf) module: allow_unauthenticated, cache_valid_time Supported parameters include: allow_downgrade, autoremove, bugfix, conf_file, disable_excludes, disable_gpg_check, disable_plugin, disablerepo, download_dir, download_only, enable_plugin, enablerepo, exclude, install_repoquery, install_weak_deps, installroot, list, lock_timeout, name, releasever, security, skip_broken, state, update_cache, update_only, validate_certs"}
+2024-04-07 19:17:19,328 p=43642 u=ocpadmin n=ansible | 	to retry, use: --limit @/home/ocpadmin/workspace/ansible-rnd/ansible-base/ansible-kvm/_logs/retry/local.retry
+
+2024-04-07 19:17:19,329 p=43642 u=ocpadmin n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-04-07 19:17:19,329 p=43642 u=ocpadmin n=ansible | 192.168.122.63             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-04-07 19:17:19,329 p=43642 u=ocpadmin n=ansible | 192.168.122.88             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-04-07 19:17:19,329 p=43642 u=ocpadmin n=ansible | Sunday 07 April 2024  19:17:19 +0000 (0:00:01.185)       0:00:01.290 ********** 
+2024-04-07 19:17:19,329 p=43642 u=ocpadmin n=ansible | =============================================================================== 
+2024-04-07 19:17:19,329 p=43642 u=ocpadmin n=ansible | install kvm packages on Debian 10,9,..,Ubuntu 20.04,18.04,e.t.c ------------------------------------------------------------------------------------------------------ 1.19s
+2024-04-07 19:17:19,330 p=43642 u=ocpadmin n=ansible | print hostname ------------------------------------------------------------------------------------------------------------------------------------------------------- 0.07s

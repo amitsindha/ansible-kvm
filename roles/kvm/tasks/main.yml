@@ -1,0 +1,7 @@
+---
+- name: include kvm on CentOs
+  import_tasks: redhat.yml
+  when: ansible_facts['os_family'] == "RedHat" # CentOS 8, CentOS 7,Fedora 33, Amazon Linux 2, e.t.c
+- name: include kkvm on Ubuntu
+  import_tasks: debian.yml
+  when: ansible_facts['os_family'] == "Debian" # Debian 10,9,..,Ubuntu 20.04,18.04,e.t.c
