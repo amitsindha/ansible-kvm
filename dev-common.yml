@@ -1,0 +1,6 @@
+---
+- hosts: all
+  remote_user: "{{ ansible_user }}"
+  roles:
+    - { role: common,               tags: [ 'common'   ] }
+    - { role: hardening,            tags: [ 'common'   ] }

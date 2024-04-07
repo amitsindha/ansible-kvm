@@ -1,2 +1,2 @@
-# ansible-boiler-plate
-Ansible Boiler Plate application workspace
+# ansible-genesis
+boiler plate to start an ansible project
