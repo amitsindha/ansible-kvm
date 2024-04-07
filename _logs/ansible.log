@@ -1,0 +1,74 @@
+2024-04-07 17:13:44,335 p=40025 u=ocpadmin n=ansible | [DEPRECATION WARNING]: DEFAULT_SQUASH_ACTIONS option, Loop squashing is deprecated and this configuration will no longer be used , use a list directly with the module 
+argument instead. This feature will be removed in version 2.11. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2024-04-07 17:13:44,594 p=40025 u=ocpadmin n=ansible | PLAY [nodes] ****************************************************************************************************************************************************************
+2024-04-07 17:13:44,612 p=40025 u=ocpadmin n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2024-04-07 17:13:44,612 p=40025 u=ocpadmin n=ansible | Sunday 07 April 2024  17:13:44 +0000 (0:00:00.032)       0:00:00.032 ********** 
+2024-04-07 17:13:56,769 p=40025 u=ocpadmin n=ansible | ok: [192.168.122.88]
+2024-04-07 17:13:58,062 p=40025 u=ocpadmin n=ansible | ok: [192.168.122.63]
+2024-04-07 17:13:58,076 p=40025 u=ocpadmin n=ansible | TASK [test : Ansible role verification] *************************************************************************************************************************************
+2024-04-07 17:13:58,076 p=40025 u=ocpadmin n=ansible | Sunday 07 April 2024  17:13:58 +0000 (0:00:13.464)       0:00:13.497 ********** 
+2024-04-07 17:13:58,134 p=40025 u=ocpadmin n=ansible | ok: [192.168.122.63] => {
+    "changed": false,
+    "msg": "This is a message from the target machine to verify ansible role successfully"
+}
+2024-04-07 17:13:58,143 p=40025 u=ocpadmin n=ansible | ok: [192.168.122.88] => {
+    "changed": false,
+    "msg": "This is a message from the target machine to verify ansible role successfully"
+}
+2024-04-07 17:13:58,146 p=40025 u=ocpadmin n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-04-07 17:13:58,146 p=40025 u=ocpadmin n=ansible | 192.168.122.63             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-04-07 17:13:58,146 p=40025 u=ocpadmin n=ansible | 192.168.122.88             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-04-07 17:13:58,147 p=40025 u=ocpadmin n=ansible | Sunday 07 April 2024  17:13:58 +0000 (0:00:00.070)       0:00:13.567 ********** 
+2024-04-07 17:13:58,147 p=40025 u=ocpadmin n=ansible | =============================================================================== 
+2024-04-07 17:13:58,147 p=40025 u=ocpadmin n=ansible | Gathering Facts ----------------------------------------------------------------------------------------------------------------------------------------------------- 13.46s
+2024-04-07 17:13:58,147 p=40025 u=ocpadmin n=ansible | test : Ansible role verification ------------------------------------------------------------------------------------------------------------------------------------- 0.07s
+2024-04-07 17:15:23,706 p=40136 u=ocpadmin n=ansible | [DEPRECATION WARNING]: DEFAULT_SQUASH_ACTIONS option, Loop squashing is deprecated and this configuration will no longer be used , use a list directly with the module 
+argument instead. This feature will be removed in version 2.11. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2024-04-07 17:15:23,923 p=40136 u=ocpadmin n=ansible | PLAY [nodes] ****************************************************************************************************************************************************************
+2024-04-07 17:15:23,937 p=40136 u=ocpadmin n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-04-07 17:15:23,938 p=40136 u=ocpadmin n=ansible | Sunday 07 April 2024  17:15:23 +0000 (0:00:00.026)       0:00:00.026 ********** 
+2024-04-07 17:15:23,938 p=40136 u=ocpadmin n=ansible | =============================================================================== 
+2024-04-07 17:15:48,219 p=40144 u=ocpadmin n=ansible | [DEPRECATION WARNING]: DEFAULT_SQUASH_ACTIONS option, Loop squashing is deprecated and this configuration will no longer be used , use a list directly with the module 
+argument instead. This feature will be removed in version 2.11. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2024-04-07 17:15:48,499 p=40144 u=ocpadmin n=ansible | PLAY [nodes] ****************************************************************************************************************************************************************
+2024-04-07 17:15:48,516 p=40144 u=ocpadmin n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-04-07 17:15:48,516 p=40144 u=ocpadmin n=ansible | Sunday 07 April 2024  17:15:48 +0000 (0:00:00.031)       0:00:00.031 ********** 
+2024-04-07 17:15:48,517 p=40144 u=ocpadmin n=ansible | =============================================================================== 
+2024-04-07 17:16:00,374 p=40149 u=ocpadmin n=ansible | [DEPRECATION WARNING]: DEFAULT_SQUASH_ACTIONS option, Loop squashing is deprecated and this configuration will no longer be used , use a list directly with the module 
+argument instead. This feature will be removed in version 2.11. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2024-04-07 17:16:00,658 p=40149 u=ocpadmin n=ansible | PLAY [nodes] ****************************************************************************************************************************************************************
+2024-04-07 17:16:00,682 p=40149 u=ocpadmin n=ansible | TASK [test : Ansible role verification] *************************************************************************************************************************************
+2024-04-07 17:16:00,682 p=40149 u=ocpadmin n=ansible | Sunday 07 April 2024  17:16:00 +0000 (0:00:00.039)       0:00:00.039 ********** 
+2024-04-07 17:16:00,735 p=40149 u=ocpadmin n=ansible | ok: [192.168.122.63] => {
+    "changed": false,
+    "msg": "This is a message from the target machine to verify ansible role successfully"
+}
+2024-04-07 17:16:00,742 p=40149 u=ocpadmin n=ansible | ok: [192.168.122.88] => {
+    "changed": false,
+    "msg": "This is a message from the target machine to verify ansible role successfully"
+}
+2024-04-07 17:16:00,745 p=40149 u=ocpadmin n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-04-07 17:16:00,745 p=40149 u=ocpadmin n=ansible | 192.168.122.63             : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-04-07 17:16:00,745 p=40149 u=ocpadmin n=ansible | 192.168.122.88             : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-04-07 17:16:00,746 p=40149 u=ocpadmin n=ansible | Sunday 07 April 2024  17:16:00 +0000 (0:00:00.063)       0:00:00.102 ********** 
+2024-04-07 17:16:00,746 p=40149 u=ocpadmin n=ansible | =============================================================================== 
+2024-04-07 17:16:00,746 p=40149 u=ocpadmin n=ansible | test : Ansible role verification ------------------------------------------------------------------------------------------------------------------------------------- 0.06s
+2024-04-07 17:19:41,169 p=40188 u=ocpadmin n=ansible | [DEPRECATION WARNING]: DEFAULT_SQUASH_ACTIONS option, Loop squashing is deprecated and this configuration will no longer be used , use a list directly with the module 
+argument instead. This feature will be removed in version 2.11. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2024-04-07 17:19:41,452 p=40188 u=ocpadmin n=ansible | PLAY [nodes] ****************************************************************************************************************************************************************
+2024-04-07 17:19:41,476 p=40188 u=ocpadmin n=ansible | TASK [test : Ansible role verification] *************************************************************************************************************************************
+2024-04-07 17:19:41,477 p=40188 u=ocpadmin n=ansible | Sunday 07 April 2024  17:19:41 +0000 (0:00:00.038)       0:00:00.038 ********** 
+2024-04-07 17:19:41,528 p=40188 u=ocpadmin n=ansible | ok: [192.168.122.63] => {
+    "changed": false,
+    "msg": "This is a message from the target machine to verify ansible role successfully"
+}
+2024-04-07 17:19:41,537 p=40188 u=ocpadmin n=ansible | ok: [192.168.122.88] => {
+    "changed": false,
+    "msg": "This is a message from the target machine to verify ansible role successfully"
+}
+2024-04-07 17:19:41,540 p=40188 u=ocpadmin n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-04-07 17:19:41,540 p=40188 u=ocpadmin n=ansible | 192.168.122.63             : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-04-07 17:19:41,540 p=40188 u=ocpadmin n=ansible | 192.168.122.88             : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-04-07 17:19:41,540 p=40188 u=ocpadmin n=ansible | Sunday 07 April 2024  17:19:41 +0000 (0:00:00.063)       0:00:00.102 ********** 
+2024-04-07 17:19:41,541 p=40188 u=ocpadmin n=ansible | =============================================================================== 
+2024-04-07 17:19:41,541 p=40188 u=ocpadmin n=ansible | test : Ansible role verification ------------------------------------------------------------------------------------------------------------------------------------- 0.06s

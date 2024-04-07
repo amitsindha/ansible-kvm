@@ -1,0 +1,4 @@
+---
+- name: Ansible role verification
+  ansible.builtin.debug:
+    msg: "This is a message from the target machine to verify ansible role successfully"
